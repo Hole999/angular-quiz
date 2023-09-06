@@ -27,6 +27,10 @@ Before you begin, make sure you have the following installed on your machine:
 npm install
 ```
 
+```
+npm install bootstrap
+```
+
 To start the development server, run:
 
 ```
