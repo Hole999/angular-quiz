@@ -21,12 +21,6 @@ Before you begin, make sure you have the following installed on your machine:
    git clone https://github.com/Hole999/angular-quiz.git
    ```
 
-# Navigate to the project directory
-
-```
-cd quiz-app
-```
-
 # Install the project dependencies
 
 ```
