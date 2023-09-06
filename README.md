@@ -41,7 +41,7 @@ ng serve
 
 Open your browser and visit http://localhost:4200 to view the Quiz App. Use the app to answer quiz questions and check your score.
 
-Acknowledgments
+# Acknowledgments
 
 This project was built using Angular.
 
