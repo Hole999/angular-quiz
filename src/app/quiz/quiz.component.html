@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div *ngIf="!isQuizOver()" class="my-5">
+        <h2 class="text-center mb-4">
+          {{ questions[currentQuestionIndex].text }}
+        </h2>
+        <div
+          *ngFor="
+            let option of questions[currentQuestionIndex].options;
+            let i = index
+          "
+          class="form-check"
+        >
+          <input
+            class="form-check-input"
+            type="radio"
+            [value]="i"
+            name="option"
+            [(ngModel)]="selectedOptionIndex"
+          />
+          <label class="form-check-label">{{ option }}</label>
+        </div>
+        <button class="btn btn-primary mt-3" (click)="nextQuestion()">
+          Next
+        </button>
+      </div>
+
+      <div *ngIf="isQuizOver()" class="text-center my-5">
+        <h2>Your Score: {{ score }} / {{ questions.length }}</h2>
+        <button class="btn btn-success mt-3" (click)="restartQuiz()">
+          Restart Quiz
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
